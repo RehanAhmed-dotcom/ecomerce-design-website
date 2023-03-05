@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: var(--bg);
+  /* background: var(--bg); */
   transition: all 3ms ease;
   color: var(--black);
   scroll-behavior: smooth;

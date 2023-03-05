@@ -1,0 +1,48 @@
+.v_container {
+  /* width: 70%; */
+  margin: 6rem 0;
+  padding: 2rem;
+  /* align-self: center; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  /* align-items: center; */
+  /* background: red; */
+  /* height: 30px; */
+}
+.left {
+  /* width: 20rem; */
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  flex-direction: column;
+}
+/* .left > :first-child {
+  font-size: 2rem;
+  font-weight: 800;
+} */
+
+.left > :nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* display: block; */
+  /* background: red; */
+}
+.left > :nth-child(2) {
+  font-size: 1.6rem;
+  width: 20rem;
+  display: block;
+  text-transform: uppercase;
+}
+.left > :nth-child(3) {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.left > img {
+  width: 10rem;
+}
+
+.right {
+  width: 30rem;
+}

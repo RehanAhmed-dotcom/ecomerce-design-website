@@ -1,36 +1,58 @@
-.s_container {
+.container {
+  padding: 0 2rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.s_container .swiper {
-  width: 70%;
-  height: 12rem;
-  position: unset;
+.container > img {
+  position: absolute;
+  left: 25%;
+  width: 8rem;
+  top: 0;
+}
+.products {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 25% auto;
+  /* flex-direction:r; */
+}
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.menu > li:hover {
+  color: var(--pink);
+  cursor: pointer;
 }
 
-.s_container .swiper-slide {
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  height: 25rem;
+  grid-gap: 2rem;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+.product {
   background: white;
   display: flex;
   border-radius: 10px;
   padding: 1rem;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   overflow: hidden;
   position: relative;
+  width: 12rem;
+  height: 8rem;
+  /* flex-direction: row; */
 }
-
-.s_container .swiper-button-prev {
-  left: 1rem;
-}
-
-.s_container .swiper-button-next {
-  right: 1rem;
-}
-
-.s_container .swiper-button-prev,
-.s_container .swiper-button-next {
-  color: black;
-}
-
 .left-s {
   display: flex;
   flex-direction: column;
